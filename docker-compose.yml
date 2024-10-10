@@ -1,0 +1,13 @@
+services:
+  react-app:
+    image: node:18 # or any other version of Node.js that you need
+    working_dir: /usr/src/app
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/node_modules
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    command: sh -c "npm install --legacy-peer-deps && npm run build && npm start"
+
