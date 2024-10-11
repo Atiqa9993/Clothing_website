@@ -13,7 +13,7 @@ const HeroBanner = () => {
     <header className='header'>
         <div className='header-left-side'>
             <div className='header-content'>
-                <span>Sale 70%</span>
+                <span>Sale Ends</span>
                 <h1>An Industrial Take on Streetwear</h1>
                 <p>Anyone can beat you but no one can beat your outfit as long as you wear Dine outfits.</p>
                 <Link href='/products'>
