@@ -7,7 +7,7 @@ services:
       - /usr/src/app/node_modules
     ports:
       - "3001:3000"
-    stdin_open: true
+    stdin_open: true 
     tty: true
     command: sh -c "npm ci --legacy-peer-deps && npm run build && npm start"
 
